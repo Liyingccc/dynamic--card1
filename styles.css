@@ -1,0 +1,7 @@
+#cover {
+    cursor: pointer;  /* 使图片可点击 */
+}
+
+#qrcode {
+    display: none;  /* 初始状态下隐藏二维码图片 */
+}
