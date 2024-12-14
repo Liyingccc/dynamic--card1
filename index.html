@@ -9,7 +9,9 @@
 <body>
     <div id="card">
         <img id="cover" src="cover.JPG" alt="封面图" onclick="showQRCode()">
-        <img id="qrcode" src="qrcode.JPG" alt="二维码" style="display: none;" onclick="goToLink()">
+        <div id="qrcode-container" style="display: none;">
+            <img id="qrcode" src="qrcode.JPG" alt="二维码" onclick="goToLink()">
+        </div>
     </div>
 
     <script src="script.js"></script>
