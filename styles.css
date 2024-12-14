@@ -1,7 +1,15 @@
 #cover {
-    cursor: pointer;  /* 使图片可点击 */
+    cursor: pointer;  /* 使封面图可点击 */
+    width: 300px;      /* 调整宽度和高度以适应布局 */
+    height: 200px;
+}
+
+#qrcode-container {
+    display: none;    /* 隐藏二维码初始状态 */
 }
 
 #qrcode {
-    display: none;  /* 初始状态下隐藏二维码图片 */
+    width: 200px;     /* 调整二维码大小 */
+    height: 200px;
+    cursor: pointer;  /* 使二维码可点击 */
 }
