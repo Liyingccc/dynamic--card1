@@ -13,7 +13,19 @@
             <img id="qrcode" src="qrcode.JPG" alt="二维码" onclick="goToLink()">
         </div>
     </div>
-
+    
+<canvas id="dynamicCard" width="300" height="200"></canvas>
+<script>
+    var canvas = document.getElementById('dynamicCard');
+    var ctx = canvas.getContext('2d');
+    // 绘制内容
+    ctx.drawImage(coverImage, 0, 0, 300, 200);  // 绘制封面图
+    ctx.drawImage(qrCodeImage, 100, 50, 100, 100);  // 绘制二维码
+    canvas.onclick = function() {
+        // 点击图片的行为
+        window.location.href = 'https://example.com';  // 替换为实际链接
+    };
+</script>
     <script src="script.js"></script>
 </body>
 </html>
